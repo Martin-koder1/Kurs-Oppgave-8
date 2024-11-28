@@ -8,6 +8,35 @@
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <main></main>
+    <main>
+      <h1>Infromaasjons Skjema</h1>
+      <fieldset>
+        <legend>(Info om deg)</legend>
+        <div>
+          <label for="name">Hva heter du?</label>
+          <input type="text" id="WhoYou" name="name" placeholder="Ditt navn her" required
+          />
+        </div>
+        <div>
+          <label for="age">Hvor gammel er du?</label>
+          <input type="text" id="Age" name="age" placeholder="Din alder her" required
+          />
+        </div>
+        <div>
+          <label for="Phone">Telefon Nummer</label>
+          <input type="text" id="PhoneNumber" name="phone" placeholder="123 45 678"
+          />
+        </div>
+        <div>
+          <label for="Email">Din Email</label>
+          <input type="text" id="Email" name="Email" placeholder="eksempel@hotmailcom"
+          />
+        </div>
+      </fieldset>
+
+      <div class="CompleteButton">
+        <button id="CompleteJob">Fullfør og send inn</button>
+      </div>
+    </main>
   </body>
 </html>
