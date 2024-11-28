@@ -14,10 +14,25 @@ legend {
 }
 
 label, input {
-  margin: 2px;
+  margin: 4px;
+  display: flex;
+  width: 90%;
 }
 
+label {
+  margin-top: 7px;
+  text-decoration: underline;
+}
 
+.CheckBoxes {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+}
+
+.GenderDecor {
+  text-decoration: none;
+}
 
 .CompleteButton {
   margin-top: 20px;
