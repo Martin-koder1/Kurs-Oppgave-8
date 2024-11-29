@@ -18,6 +18,10 @@ section {
   align-items: center;
 }
 
+h1 {
+  font-size: 30px;
+}
+
 legend {
   line-height: 30px;
   font-size: large;
