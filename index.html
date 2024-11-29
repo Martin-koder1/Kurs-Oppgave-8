@@ -9,13 +9,14 @@
   </head>
   <body>
     <main>
-      <h1>Infromaasjons Skjema</h1>
-      <fieldset>
-        <legend>(Info om deg)</legend>
-        <div>
-          <label for="name">Hva heter du?</label>
-          <input type="text" id="WhoYou" name="name" placeholder="Ditt navn her" required
-          />
+      <section>
+        <h1>Infromaasjons Skjema</h1>
+        <fieldset>
+          <legend>(Info om deg)</legend>
+          <div>
+            <label for="name">Hva heter du?</label>
+            <input type="text" id="WhoYou" name="name" placeholder="Ditt navn her" required
+            />
         </div>
         <div>
           <label for="age">Hvor gammel er du?</label>
@@ -46,11 +47,22 @@
           <input type="checkbox" id="Other" name="Gender" value="Other" />
           Annet
         </label>
-        </div>
-      </fieldset>
-      <div class="CompleteButton">
-        <button id="CompleteJob">Fullfør og send inn</button>
       </div>
-    </main>
+    </fieldset>
+    <div class="CompleteButton">
+      <button id="CompleteJob">Fullfør og send inn</button>
+    </div>
+    <fieldset class="PiBox">
+      <div>
+        <label for="number">Pi Kalkulator</label>
+        <input type="number" id="PiCalculator" name="Pi" placeholder="π = 3.14"/>
+      </div>
+      <div class="TimesPi">
+        <button id="MultiplyPi">Gang med Pi</button>
+      </div>
+      <div id="result"></div>
+  </fieldset>
+  </section>
+  </main>
   </body>
 </html>

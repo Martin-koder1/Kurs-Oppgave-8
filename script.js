@@ -13,7 +13,7 @@ function submit(event) {
   
   const FullName = YourName.value;
   const PersonAge = YourAge.value;
-  const PersonNumber = PhoneNumber.value;
+  const PersonNumber = YourNumber.value;
   const PersonEmail = YourEmail.value;
 
   const GenderArray = [];
@@ -36,3 +36,22 @@ function submit(event) {
 }
 
 CompleteJob.addEventListener('click', submit);
+
+
+const PiCalculator = document.querySelector('#PiCalculator');
+
+const MultiplyPiButton = document.querySelector('#MultiplyPi');
+
+const resultDiv = document.querySelector('#result');
+
+function multiplying(event) {
+  event.preventDefault(); 
+
+  const MultiplyNumber = PiCalculator.value;
+
+  const Pi = MultiplyNumber * 3.14;  
+
+  resultDiv.textContent = `Result: ${MultiplyNumber} * 3.14 = ${Pi}`;
+}
+
+MultiplyPiButton.addEventListener("click", multiplying);
